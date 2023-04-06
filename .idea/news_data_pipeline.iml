@@ -5,7 +5,7 @@
       <excludeFolder url="file://$MODULE_DIR$/feedenv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (news_data_pipeline)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (fstorage)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

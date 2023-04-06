@@ -9,6 +9,7 @@ proxy:
   number_of_proxies: 50
   healthcheck: 0.66
   timeout: 10
+  limit: 5
   storage:
     storage_key: proxy
     host: localhost

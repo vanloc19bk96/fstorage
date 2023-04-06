@@ -13,7 +13,7 @@ class RetryOnException:
 
         def wrapper(*args, **kwargs):
             self.logger.info(f"Retries: {self.retries}")
-            while self._retries != 0:
+            while self.retries != 0:
                 try:
                     return function(*args, **kwargs)
                 except Exception as err:
