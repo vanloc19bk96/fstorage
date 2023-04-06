@@ -1,0 +1,24 @@
+[2023-03-29 07:34:25,834] {scheduler_job.py:182} INFO - Started process (PID=449) to work on /opt/airflow/dags/simple.py
+[2023-03-29 07:34:25,890] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/simple.py for tasks to queue
+[2023-03-29 07:34:25,928] {logging_mixin.py:104} INFO - [2023-03-29 07:34:25,906] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/simple.py
+[2023-03-29 07:34:26,676] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['hello_world']) retrieved from /opt/airflow/dags/simple.py
+[2023-03-29 07:36:34,034] {scheduler_job.py:182} INFO - Started process (PID=590) to work on /opt/airflow/dags/simple.py
+[2023-03-29 07:36:34,053] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/simple.py for tasks to queue
+[2023-03-29 07:36:34,072] {logging_mixin.py:104} INFO - [2023-03-29 07:36:34,069] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/simple.py
+[2023-03-29 07:36:34,498] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['hello_world']) retrieved from /opt/airflow/dags/simple.py
+[2023-03-29 08:00:38,103] {processor.py:163} INFO - Started process (PID=282) to work on /opt/airflow/dags/simple.py
+[2023-03-29 08:00:38,145] {processor.py:642} INFO - Processing file /opt/airflow/dags/simple.py for tasks to queue
+[2023-03-29 08:00:38,168] {logging_mixin.py:109} INFO - [2023-03-29 08:00:38,162] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/simple.py
+[2023-03-29 08:00:39,531] {processor.py:652} INFO - DAG(s) dict_keys(['hello_world']) retrieved from /opt/airflow/dags/simple.py
+[2023-03-29 08:01:35,837] {processor.py:163} INFO - Started process (PID=333) to work on /opt/airflow/dags/simple.py
+[2023-03-29 08:01:35,966] {processor.py:642} INFO - Processing file /opt/airflow/dags/simple.py for tasks to queue
+[2023-03-29 08:01:36,013] {logging_mixin.py:109} INFO - [2023-03-29 08:01:35,982] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/simple.py
+[2023-03-29 08:01:37,924] {processor.py:652} INFO - DAG(s) dict_keys(['hello_world']) retrieved from /opt/airflow/dags/simple.py
+[2023-03-29 10:10:47,418] {processor.py:163} INFO - Started process (PID=322) to work on /opt/airflow/dags/simple.py
+[2023-03-29 10:10:47,454] {processor.py:642} INFO - Processing file /opt/airflow/dags/simple.py for tasks to queue
+[2023-03-29 10:10:47,498] {logging_mixin.py:109} INFO - [2023-03-29 10:10:47,497] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/simple.py
+[2023-03-29 10:10:50,387] {processor.py:652} INFO - DAG(s) dict_keys(['hello_world']) retrieved from /opt/airflow/dags/simple.py
+[2023-03-29 10:11:46,295] {processor.py:163} INFO - Started process (PID=377) to work on /opt/airflow/dags/simple.py
+[2023-03-29 10:11:46,349] {processor.py:642} INFO - Processing file /opt/airflow/dags/simple.py for tasks to queue
+[2023-03-29 10:11:46,400] {logging_mixin.py:109} INFO - [2023-03-29 10:11:46,379] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/simple.py
+[2023-03-29 10:11:47,468] {processor.py:652} INFO - DAG(s) dict_keys(['hello_world']) retrieved from /opt/airflow/dags/simple.py

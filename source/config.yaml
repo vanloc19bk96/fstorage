@@ -1,0 +1,29 @@
+version: '1'
+
+parser_type: html.parser
+proxy:
+  url: https://free-proxy-list.net/
+  testing_url: https://google.com
+  number_of_workers: 50
+  number_checks: 3
+  number_of_proxies: 50
+  healthcheck: 0.66
+  timeout: 10
+  storage:
+    storage_key: proxy
+    host: localhost
+    port: 6379
+    db: 0
+
+
+services:
+  cnn-crawler:
+    type: CNNCrawler
+    args:
+      url: "https://edition.cnn.com/"
+
+  voa-crawler:
+    type: VOACrawler
+    args:
+      url: "https://edition.cnn.com/"
+

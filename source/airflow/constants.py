@@ -1,0 +1,7 @@
+PROXY_KEY = "proxy"
+URL_KEY = "url"
+TESTING_URL_KEY = "testing_url"
+HEALTHCHECK_KEY = "healthcheck"
+NUMBER_OF_PROXIES = "number_of_proxies"
+PROXY_STORAGE_DB_KEY = "storage_key"
+PROXY_SERVICE_KEY = "storage"
