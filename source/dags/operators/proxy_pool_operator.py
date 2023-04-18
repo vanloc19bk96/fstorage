@@ -1,17 +1,25 @@
+import json
+import os
+
 from concurrent.futures import ThreadPoolExecutor
 
-from source.airflow.constants import PROXY_KEY, URL_KEY, TESTING_URL_KEY, HEALTHCHECK_KEY, NUMBER_OF_PROXIES, \
+from airflow.models import BaseOperator
+from airflow.utils.decorators import apply_defaults
+
+from source.constants import PROXY_KEY, URL_KEY, TESTING_URL_KEY, HEALTHCHECK_KEY, NUMBER_OF_PROXIES, \
     PROXY_STORAGE_KEY, PROXY_STORAGE_DB_KEY, NUMBER_OF_WORKERS, LIMIT_PROXIES
 from source.crawler.proxypool.proxy_crawler import ProxyCrawler
 from source.crawler.proxypool.proxy_storage import ProxyStorage
 from source.crawler.proxypool.proxy_validator import ProxyValidator
 from utils.parser import ConfigParser
 from utils.retry import RetryOnException as retry
-import json
+
+import sys
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 
-class ProxyPoolOperator():
-    # @apply_defaults
+class ProxyPoolOperator(BaseOperator):
+    @apply_defaults
     def __init__(self, config_path, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.config = ConfigParser.from_args(config_path)
@@ -44,7 +52,3 @@ class ProxyPoolOperator():
                     json.dumps(record) for record in sorted_valid_proxies[:limit_proxies]
                 ]
             )
-
-
-proxy = ProxyPoolOperator("../../../config.yaml")
-proxy.execute(None)

@@ -1,7 +1,5 @@
 import json
 
-from source.crawler.proxypool.proxy_crawler import ProxyCrawler
-from source.crawler.proxypool.proxy_validator import ProxyValidator
 from utils.log import log
 import redis
 

@@ -1,4 +1,4 @@
-import source.crawler as module_crawler
+import source.plugins.crawler as module_crawler
 from utils.constants import SERVICE_KEY, OBJECT_TYPE_KEY, OBJECT_ARGUMENTS_KEY
 
 
