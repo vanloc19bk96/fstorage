@@ -1,6 +1,17 @@
 version: '1'
 
 parser_type: html.parser
+
+dag_config:
+  description: Scrape latest feeds
+  schedule: 0-59/5 * * * *
+  start_date:
+    year: 2023
+    month: 04
+    day: 13
+  catchup: False
+  is_paused_upon_creation: False
+
 proxy:
   url: https://free-proxy-list.net/
   testing_url: https://google.com
@@ -12,7 +23,7 @@ proxy:
   limit: 5
   storage:
     storage_key: proxy
-    host: localhost
+    host: redis
     port: 6379
     db: 0
 

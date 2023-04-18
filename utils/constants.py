@@ -1,7 +1,9 @@
 SERVICE_KEY = 'services'
 OBJECT_ARGUMENTS_KEY = 'args'
 OBJECT_TYPE_KEY = 'type'
-CRAWLER_CONFIG_PATH = '../source/config.yaml'
+CRAWLER_CONFIG_PATH = './source/config.yaml'
+
+# CRAWLER_CONFIG_PATH = '/Users/tranvanloc/Documents/DE/Learn/fstorage/source/config.yaml'
 
 HEADERS_LIST = [
     {

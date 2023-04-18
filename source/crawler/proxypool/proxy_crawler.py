@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 
 from bs4 import BeautifulSoup
-from source.plugins.crawler.base_crawler import BaseCrawler
+from source.crawler.base_crawler import BaseCrawler
 from utils.log import log
 from utils.parser import WebParser
 

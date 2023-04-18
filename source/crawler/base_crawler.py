@@ -1,5 +1,4 @@
 from abc import abstractmethod
-from utils.log import log
 
 
 class BaseCrawler(object):

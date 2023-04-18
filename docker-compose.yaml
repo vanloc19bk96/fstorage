@@ -1,0 +1,32 @@
+version: '3'
+
+x-fstorage-common:
+  volumes:
+    - &fstorage-volumes-utils ./utils:/usr/local/fstorage/utils
+
+services:
+  source:
+    container_name: source
+    build: ./source
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - *fstorage-volumes-utils
+      - ./source:/usr/local/fstorage/source
+    healthcheck:
+      test: CMD-SHELL curl --fail ${AIRFLOW_HEALTHCHECK_URL}
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    depends_on:
+      - redis
+
+  redis:
+    container_name: redis
+    image: redis:alpine
+    command: [ "redis-server", "--appendonly", "yes", "--dir", "/usr/local/fstorage/source/redis" ]
+    ports:
+      - 6379:6379
+    volumes:
+      - ./redis:/usr/local/fstorage/source/redis

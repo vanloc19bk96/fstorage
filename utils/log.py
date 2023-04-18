@@ -16,8 +16,8 @@ class Logger:
 
     def get_logger(self, filename):
         return logging.getLogger(filename)
-    
-        
+
+
 def log(cls):
     cls.logger = Logger().get_logger(cls.__name__)
     return cls
